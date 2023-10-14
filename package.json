@@ -1,0 +1,26 @@
+{
+  "name": "Media Prospects",
+  "version": "1.0.0",
+  "description": "A Landing Page for Media Prospect",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "gh-pages": "^6.0.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.4.11"
+  },
+  "dependencies": {
+    "video.js": "^8.6.0"
+  }
+}
