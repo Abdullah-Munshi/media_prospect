@@ -11,3 +11,9 @@ body {
   height: 205px;
   bottom: -20px;
 }
+.hero-content h1 {
+  background-image: linear-gradient(to right, #5b86e5, #36d1dc);
+  overflow: hidden;
+  color: transparent;
+  background-clip: text;
+}
