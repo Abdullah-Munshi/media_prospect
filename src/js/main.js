@@ -11,4 +11,7 @@ const players = Array.from(document.querySelectorAll(".video_player")).map(
     })
 );
 
-console.log(players);
+// Hide the preloader when the page is fully loaded
+window.onload = function () {
+  document.getElementById("preloader").classList.add("hide");
+};
