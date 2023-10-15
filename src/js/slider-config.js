@@ -36,16 +36,6 @@ function setupSlider() {
   exampleMain.on("move", () => {
     ytPlayersForSlider.forEach((ytPlayer) => ytPlayer.pause());
   });
-
-  exampleThumbnails.on("overflow", function (isOverflow) {
-    if (isOverflow) {
-      // Enough slides
-      console.log("don't hi");
-    } else {
-      // Not enough slides
-      console.log("hi");
-    }
-  });
 }
 
 export default setupSlider;
