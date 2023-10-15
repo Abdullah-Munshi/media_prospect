@@ -1,7 +1,9 @@
 import { heroPlayer } from "./videoPlayer";
 function pageTwicks() {
   heroPlayer.on("ready", function () {
-    document.getElementById("preloader").classList.add("hide");
+    setTimeout(() => {
+      document.getElementById("preloader").classList.add("hide");
+    }, 0);
   });
 
   // Header background change

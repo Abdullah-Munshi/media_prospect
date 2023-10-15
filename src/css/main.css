@@ -31,7 +31,9 @@ header {
 header.change {
   background-color: #5b86e5;
 }
-
+.plyr__control.plyr__control--overlaid {
+  background-color: rgba(15, 45, 89, 0.3);
+}
 /* preloader css start */
 .lds-ellipsis {
   display: inline-block;

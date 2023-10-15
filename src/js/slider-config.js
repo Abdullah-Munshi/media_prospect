@@ -15,11 +15,10 @@ function setupSlider() {
     isNavigation: true,
     radius: 10,
     gap: 10,
-    focus: "center",
-    trimSpace: true,
+    focus: -1,
     pagination: false,
     arrows: false,
-    // cover: true,
+    cover: true,
     dragMinThreshold: {
       mouse: 4,
       touch: 10,
