@@ -16,11 +16,6 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap"
       rel="stylesheet"
     />
-    <!-- Plugin Css  -->
-    <link
-      rel="stylesheet"
-      href="./node_modules/video.js/dist/video-js.min.css"
-    />
     <link rel="stylesheet" href="./src/css/main.css" />
   </head>
   <body class="">
@@ -44,10 +39,10 @@
             </h1>
           </div>
           <video
-            id="video-frame-1"
-            class="video-js mx-auto block"
+            id="heroPlayer"
+            playsinline
             controls
-            poster="./src/images/poster-1.avif"
+            data-poster="./src/images/poster-1.avif"
           >
             <source src="./src/videos/video-1.mp4" type="video/mp4" />
           </video>
@@ -375,10 +370,10 @@
             </div>
             <div>
               <video
-                id="video-frame-2"
-                class="video-js"
+                class="video_player"
+                playsinline
                 controls
-                poster="./src/images/poster-1.avif"
+                data-poster="./src/images/poster-1.avif"
               >
                 <source src="./src/videos/video-1.mp4" type="video/mp4" />
               </video>
@@ -400,10 +395,10 @@
             </div>
             <div>
               <video
-                id="video-frame-3"
-                class="video-js"
+                class="video_player"
+                playsinline
                 controls
-                poster="./src/images/poster-1.avif"
+                data-poster="./src/images/poster-1.avif"
               >
                 <source src="./src/videos/video-1.mp4" type="video/mp4" />
               </video>
