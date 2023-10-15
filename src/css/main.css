@@ -18,12 +18,18 @@ body {
   background-clip: text;
 }
 .hero-area .plyr {
-  width: 1220px;
+  width: 1130px;
   margin-left: auto;
   margin-right: auto;
 }
 .plyr {
   border-radius: 10px;
+}
+header {
+  transition: 0.3s;
+}
+header.change {
+  background-color: #5b86e5;
 }
 
 /* preloader css start */
