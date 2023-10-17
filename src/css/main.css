@@ -1,9 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body {
-  font-family: "Nunito Sans", sans-serif;
-}
 .container {
   max-width: 1440px;
 }
@@ -12,16 +9,13 @@ body {
   bottom: -20px;
 }
 .hero-content h1 {
-  background-image: linear-gradient(to right, #5b86e5, #36d1dc);
-  overflow: hidden;
-  color: transparent;
-  background-clip: text;
-}
-.hero-area .plyr {
-  width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  line-height: 1.25;
+  }
+  .hero-area .plyr {
+    width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 .plyr {
   border-radius: 10px;
 }

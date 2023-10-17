@@ -24,5 +24,6 @@ export default {
       },
     },
   },
-  base: "/media_prospect",
+  // base: "/media_prospect", github hosting purpose
+  base: './'
 };
