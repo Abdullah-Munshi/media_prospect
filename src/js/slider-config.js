@@ -42,16 +42,17 @@ function setupSlider() {
     ytPlayersForSlider.forEach((ytPlayer) => ytPlayer.pause());
   });
 
-  const testimonialMain = new Splide(".testimonial-slider", mainSliderObj);
-  const testimonialThumbnails = new Splide(
-    ".testimonial-slider-thumbnail",
-    thumbSliderObj
-  );
+  const testimonialCarousel = new Splide("#testimonial-carousel", {
+    type: "loop",
+    perPage: 3,
+    perMove: 1,
+    gap: 40,
+    pagination: false,
+    speed: 3000,
+  });
 
-  testimonialMain.sync(testimonialThumbnails);
-  testimonialMain.mount();
-  testimonialThumbnails.mount();
-  testimonialMain.on("move", () => {
+  testimonialCarousel.mount();
+  testimonialCarousel.on("move", () => {
     ytPlayersForSlider.forEach((ytPlayer) => ytPlayer.pause());
   });
 }

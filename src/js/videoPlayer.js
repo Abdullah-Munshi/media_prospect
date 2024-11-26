@@ -18,4 +18,10 @@ export const ytPlayersForSlider = Array.from(
 
 export const heroPlayer = new Plyr(".hero-player", {
   ratio: "16:9",
+  autoplay: true, // Enable autoplay
+  muted: true,
+});
+
+heroPlayer.on("ready", () => {
+  heroPlayer.play();
 });
