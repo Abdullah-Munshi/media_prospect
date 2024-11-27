@@ -1,10 +1,10 @@
 import { heroPlayer } from "./videoPlayer";
 function pageTwicks() {
-  // heroPlayer.on("ready", function () {
-  //   setTimeout(() => {
-  //     document.getElementById("preloader").classList.add("hide");
-  //   }, 0);
-  // });
+  heroPlayer.on("ready", function () {
+    setTimeout(() => {
+      document.getElementById("preloader").classList.add("hide");
+    }, 0);
+  });
 
   // Header background change
   // function changeHeader() {
