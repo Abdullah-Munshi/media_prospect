@@ -11,6 +11,7 @@
   text-transform: uppercase;
   line-height: 1.18;
   border-radius: 6px;
+  position: relative;
 }
 .box-btn:hover {
   background-image: linear-gradient(to right, #5ca4dd 100%, #2700e399);
@@ -144,3 +145,73 @@
   visibility: hidden;
 }
 /* preloader css end */
+
+.moveable-inner {
+  --dot-bg: #51bcf7;
+  --dot-color: white;
+  --dot-size: 1px;
+  --dot-space: 22px;
+  background: linear-gradient(
+        90deg,
+        var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
+        transparent 1%
+      )
+      center / var(--dot-space) var(--dot-space),
+    linear-gradient(
+        var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
+        transparent 1%
+      )
+      center / var(--dot-space) var(--dot-space),
+    var(--dot-color);
+  width: 100%;
+  height: 100%;
+}
+.pulse-ring {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  display: block;
+  top: 50%;
+  left: -3px;
+  transform: translateY(-50%);
+}
+.size-2 .pulse-ring {
+  left: -3px;
+}
+.pulse-ring::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pulse-ring::before {
+  content: "";
+  border: 3px solid #fff;
+  border-radius: 30px;
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  animation: pulsate 1s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  top: -6px;
+  left: -6px;
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+    opacity: 0;
+  }
+}
