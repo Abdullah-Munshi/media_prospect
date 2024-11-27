@@ -44,7 +44,7 @@ function setupSlider() {
 
   const testimonialCarousel = new Splide("#testimonial-carousel", {
     type: "loop",
-    perPage: 3,
+    perPage: 4,
     perMove: 1,
     gap: 40,
     pagination: false,
