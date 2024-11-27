@@ -49,6 +49,15 @@ function setupSlider() {
     gap: 40,
     pagination: false,
     speed: 3000,
+    breakpoints: {
+      767: {
+        perPage: 1,
+        gap: 20,
+      },
+      992: {
+        perPage: 2,
+      },
+    },
   });
 
   testimonialCarousel.mount();

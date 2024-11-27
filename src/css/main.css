@@ -215,3 +215,13 @@
     opacity: 0;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .box-btn {
+    padding: 14px 18px;
+    font-size: 15px;
+  }
+  .box-btn.size-2 {
+    padding: 15px 25px;
+  }
+}
