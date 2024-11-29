@@ -75,6 +75,8 @@
 }
 .box-btn.size-2 {
   padding: 19px 34px;
+  width: auto;
+  height: auto;
 }
 .splide__arrow {
   background: #fff;
