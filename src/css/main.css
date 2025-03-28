@@ -230,3 +230,68 @@
 .result-area .container {
   max-width: 1150px;
 }
+
+.about-area .container {
+  max-width: 1140px;
+}
+.like-ul {
+  position: relative;
+  padding-top: 40px;
+}
+.like-ul::before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  background: rgb(81, 188, 247);
+  position: absolute;
+  left: 370px;
+  top: 5px;
+  height: calc(100% - 10px);
+}
+.like-ul .like-li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 370px auto;
+  grid-gap: 36px;
+}
+.like-ul .like-li::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background: rgb(81, 188, 247);
+  position: absolute;
+  left: 365px;
+  top: 14px;
+  border-radius: 10px;
+}
+.details-step-wrapper h4 {
+  padding-right: 32px;
+}
+.about-inner-twin {
+  margin-bottom: 60px;
+}
+.cta-wrapper {
+  margin-top: 60px;
+  border-radius: 5px;
+}
+.question-mark {
+  width: 124px;
+  top: -70px;
+  left: -70px;
+}
+.about-inner-twin .photo {
+  border: 1px solid rgb(81, 188, 247);
+  padding: 10px;
+  border-radius: 5px;
+}
+.about-inner-twin .photo img {
+  border-radius: 5px;
+}
+.social-contact a span {
+  display: inline-block;
+  width: 32px;
+}
+.social-contact a span img {
+  max-width: 100%;
+}
