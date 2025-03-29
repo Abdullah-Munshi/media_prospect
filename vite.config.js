@@ -1,9 +1,11 @@
-import { resolve } from "path";
+import path from "path";
+import fs from "fs";
 export default {
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "index.html"),
+        main: path.resolve(__dirname, "index.html"),
+        about: path.resolve(__dirname, "about.html"),
       },
       output: {
         chunkFileNames: "js/[name]-[hash].js",
@@ -24,6 +26,22 @@ export default {
       },
     },
   },
+  plugins: [
+    {
+      name: "move-about-html",
+      closeBundle: () => {
+        const aboutSrc = path.resolve(__dirname, "dist/about.html");
+        const aboutDestDir = path.resolve(__dirname, "dist/ourfounder");
+
+        if (fs.existsSync(aboutSrc)) {
+          if (!fs.existsSync(aboutDestDir)) {
+            fs.mkdirSync(aboutDestDir);
+          }
+          fs.renameSync(aboutSrc, path.join(aboutDestDir, "index.html"));
+        }
+      },
+    },
+  ],
   // base: "/media_prospect", github hosting purpose
-  base: './'
+  base: "./",
 };

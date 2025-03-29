@@ -295,3 +295,31 @@
 .social-contact a span img {
   max-width: 100%;
 }
+@media screen and (max-width: 1280px) {
+  .question-mark {
+    width: 90px;
+    top: -35px;
+    left: -35px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .question-mark {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .like-ul .like-li {
+    display: block;
+    padding-left: 20px;
+  }
+  .details-step-wrapper h4 {
+    padding-right: 0;
+    margin-bottom: 12px;
+  }
+  .like-ul::before {
+    left: 0px;
+  }
+  .like-ul .like-li::before {
+    left: -5px;
+  }
+}
